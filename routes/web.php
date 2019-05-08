@@ -9,5 +9,5 @@ Route::get('course', 'UpskillController@course')->name('frontend.course');
 Route::get('news', 'UpskillController@news')->name('frontend.news');
 Route::get('contact', 'UpskillController@contact')->name('frontend.contact');
 Route::get('register', 'UpskillController@register')->name('user.register');
-Route::get('single-course', 'UpskillController@singlecourse')->name('frontend.sinlge-course');
-
+Route::get('single-course', 'UpskillController@singlecourse')->name('frontend.single-course');
+Route::get('login', 'UpskillController@login')->name('user.login');

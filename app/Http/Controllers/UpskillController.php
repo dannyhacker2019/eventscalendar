@@ -27,4 +27,7 @@ class UpskillController extends Controller
     public function singlecourse() {
         return view('frontend.sinlge-course');
     }
+    public function login() {
+        return view('user.login');
+    }
 }
