@@ -1,107 +1,70 @@
 @extends('layouts.default')
 
 @section('content')
-		<aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Contact Us</h1>
-				   					<h2><span><a href="{{ route('frontend.home')}}">Home</a> | Contact</span></h2>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			  	</ul>
-		  	</div>
-		</aside>
-		
-		<div id="colorlib-contact">
-			<div class="container">
-				<div class="row">
-				@if ($errors->any())
-          @foreach ($errors->all() as $error)
-         <div class="alert alert-danger">
-           <button type="button" aria-hidden="true" class="close" onclick="this.parentElement.style.display="none";></button>
-           <span>
-             <b>  Danger - </b> {{ $error }}</span>
-         </div>
-         @endforeach
-          @endif
-					<div class="col-md-10 col-md-offset-1 animate-box">
-						<h2>Contact Information</h2>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="contact-info-wrap-flex">
-									<div class="con-info">
-										<p><span><i class="icon-location-2"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
-									</div>
-									<div class="con-info">
-										<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-									</div>
-									<div class="con-info">
-										<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-									</div>
-									<div class="con-info">
-										<p><span><i class="icon-globe"></i></span> <a href="#">yourwebsite.com</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-10 col-md-offset-1 animate-box">
-						<h2>Message Us</h2>
-						<form action="{{ route('frontend.home')}}">
-						 @if(session('successMsg'))
-          <div class="alert alert-success">
-                <button type="button" arial-hidden="true" class="close" onclick="this.parentElement.style.display='none'"></button>
-                <span>
-                    <b> Success - </b> {{ session('successMsg')}}</span>
-              </div>
-              @endif
-					<div class="row form-group">
-								<div class="col-md-6">
-									<!-- <label for="fname">First Name</label> -->
-									<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-								</div>
-								<div class="col-md-6">
-									<!-- <label for="lname">Last Name</label> -->
-									<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-								</div>
-							</div>
+<section class="site-hero site-sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_2.jpg);">
+      <div class="container">
+        <div class="row align-items-center justify-content-center site-hero-sm-inner">
+          <div class="col-md-7 text-center">
+  
+            <div class="mb-5 element-animate">
+              <h1 class="mb-2">Contact Us</h1>
+              <p class="bcrumb"><a href="index.html">Home</a> <span class="sep ion-android-arrow-dropright px-2"></span>  <span class="current">Contact Us</span></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
 
-							<div class="row form-group">
-								<div class="col-md-12">
-									<!-- <label for="email">Email</label> -->
-									<input type="text" id="email" class="form-control" placeholder="Your email address">
-								</div>
-							</div>
+    <section class="site-section element-animate">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 pr-md-5">
+            <form action="{{ route('frontend.contact')}}" method="POST">
+            {{ csrf_field() }}
+                  <div class="row">
+                    <div class="col-md-4 form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" class="form-control py-2">
+                    </div>
+                    <div class="col-md-4 form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" id="phone" class="form-control py-2">
+                    </div>
+                    <div class="col-md-4 form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" class="form-control py-2">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="message">Write Message</label>
+                      <textarea name="message" id="message" class="form-control py-2" cols="30" rows="8"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="submit" value="Send Message" class="btn btn-primary">
+                    </div>
+                  </div>
+                </form>
+          </div>
+          <div class="col-md-4">
+            
+            <div class="block-23">
+              <h3 class="heading mb-5">Contact Information</h3>
+              <ul>
+                <li><span class="icon ion-android-pin"></span><span class="text">University of Nigeria Nsukka, Nigeria</span></li>
+                <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">+234 807 9595 551</span></a></li>
+                <li><a href="#"><span class="icon ion-android-mail"></span><span class="text">info@eventscalendar.com</span></a></li>
+                <li><span class="icon ion-android-time"></span><span class="text">Always availiable</span></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
 
-							<div class="row form-group">
-								<div class="col-md-12">
-									<!-- <label for="subject">Subject</label> -->
-									<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-								</div>
-							</div>
-
-							<div class="row form-group">
-								<div class="col-md-12">
-									<!-- <label for="message">Message</label> -->
-									<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<input type="submit" value="Send Message" class="btn btn-primary">
-							</div>
-						</form>		
-					</div>
-				</div>
-			</div>
-		</div>
-		
-@endsection
+      </div>
+    </section>    
+@stop

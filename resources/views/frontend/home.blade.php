@@ -2,448 +2,378 @@
 
 @section('content')
 
-		<aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Best Online Learning System</h1>
-				   					<p><a href="{{ route('user.register')}}" class="btn btn-primary btn-lg btn-learn">Register Now</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Online Free Course</h1>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Education is a Key to Success</h1>
-				   					<p><a href="{{ route('user.register')}}" class="btn btn-primary btn-lg btn-learn">Register Now</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/img_bg_4.jpg);">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
-				   				<div class="slider-text-inner text-center">
-				   					<h1>Best Online Learning Center</h1>
-				   					<p><a href="{{ route('user.register')}}" class="btn btn-primary btn-lg btn-learn">Register Now</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>	
-			  	</ul>
-		  	</div>
-		</aside>
-		</div>
+<section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_2.jpg);">
+      <div class="container">
+        <div class="row align-items-center justify-content-center site-hero-inner">
+          <div class="col-md-10">
+  
+            <div class="mb-5 element-animate">
+              <div class="block-17">
+                <h2 class="heading text-center mb-4">Find Events that are happening near you in UNN</h2>
+                <form action="{{ route('frontend.events')}}"  class="d-block d-lg-flex mb-4">
+                  <div class="fields d-block d-lg-flex">
+                    <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Keyword search..."></div>
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Event</option>
+                        <option value="">Today Event</option>
+                        <option value="">Tomorrow Event</option>
+                        <option value="">Next tomorrow Event</option>
+                        <option value="">Next week Event</option>
+                      
+                      </select>
+                    </div>
+                    <div class="select-wrap one-third">
+                      <div class="icon"></div>
+                      <select name="" id="" class="form-control">
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <input type="submit" class="search-submit btn btn-primary" value="Search">  
+                </form>
+                <p class="text-center mb-5">We tell and remind you  you of events coming up in UNN.Register with us to enjoy more of our services </p>
+                <p class="text-center"><a href="{{ route('register')}}" class="btn py-3 px-5">Register Now</a></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
 
-		<div id="colorlib-intro">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 intro-wrap">
-						<div class="intro-flex">
-							<div class="one-third color-1 animate-box">
-								<span class="icon"><i class="flaticon-market"></i></span>
-								<div class="desc">
-									<h3>Learn Courses Online</h3>
-									<p><a href="{{ route('frontend.course')}} class="view-more">View More</a></p>
-								</div>
-							</div>
-							<div class="one-third color-2 animate-box">
-								<span class="icon"><i class="flaticon-open-book"></i></span>
-								<div class="desc">
-									<h3>Online Library Store</h3>
-									<p><a href="#" class="view-more">View More</a></p>
-								</div>
-							</div>
-							<div class="one-third color-3 animate-box">
-								<div class="desc2">
-									<h3>50% off in all selected Courses</h3>
-									<p><a href="#" class="view-more">View More</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-8">
-						<div class="about-desc animate-box">
-							<h2>Welcome to Upskill</h2>
-							<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-							<div class="fancy-collapse-panel">
-	                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-	                     <div class="panel panel-default">
-	                         <div class="panel-heading" role="tab" id="headingOne">
-	                             <h4 class="panel-title">
-	                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why choose us?
-	                                 </a>
-	                             </h4>
-	                         </div>
-	                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-	                             <div class="panel-body">
-	                                 <div class="row">
-									      		<div class="col-md-6">
-									      			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-									      		</div>
-									      		<div class="col-md-6">
-									      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									      		</div>
-									      	</div>
-	                             </div>
-	                         </div>
-	                     </div>
-	                     <div class="panel panel-default">
-	                         <div class="panel-heading" role="tab" id="headingTwo">
-	                             <h4 class="panel-title">
-	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What we do?
-	                                 </a>
-	                             </h4>
-	                         </div>
-	                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-	                             <div class="panel-body">
-	                                 <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-												<ul>
-													<li>Separated they live in Bookmarksgrove right</li>
-													<li>Separated they live in Bookmarksgrove right</li>
-												</ul>
-	                             </div>
-	                         </div>
-	                     </div>
-	                     <div class="panel panel-default">
-	                         <div class="panel-heading" role="tab" id="headingThree">
-	                             <h4 class="panel-title">
-	                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Offer Services
-	                                 </a>
-	                             </h4>
-	                         </div>
-	                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-	                             <div class="panel-body">
-	                                 <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
-	                             </div>
-	                         </div>
-	                     </div>
-	                  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
+    <section class="site-section element-animate">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-2">
+            <div class="block-16">
+              
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
 
-		<div id="colorlib-services">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="flaticon-books"></i>
-							</span>
-							<div class="desc">
-								<h3>Professional Courses</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="flaticon-professor"></i>
-							</span>
-							<div class="desc">
-								<h3>Experienced Instructor</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="flaticon-book"></i>
-							</span>
-							<div class="desc">
-								<h3>Practical Training</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="flaticon-diploma"></i>
-							</span>
-							<div class="desc">
-								<h3>Validated Certificate</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="counter-entry">
-									<span class="icon"><i class="flaticon-book"></i></span>
-									<div class="desc">
-										<span class="colorlib-counter js-counter" data-from="0" data-to="1539" data-speed="5000" data-refresh-interval="50"></span>
-										<span class="colorlib-counter-label">Courses</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="counter-entry">
-									<span class="icon"><i class="flaticon-student"></i></span>
-									<div class="desc">
-										<span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
-										<span class="colorlib-counter-label">Students</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="counter-entry">
-									<span class="icon"><i class="flaticon-professor"></i></span>
-									<div class="desc">
-										<span class="colorlib-counter js-counter" data-from="0" data-to="2300" data-speed="5000" data-refresh-interval="50"></span>
-										<span class="colorlib-counter-label">Teachers</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="counter-entry">
-									<span class="icon"><i class="flaticon-earth-globe"></i></span>
-									<div class="desc">
-										<span class="colorlib-counter js-counter" data-from="0" data-to="200" data-speed="5000" data-refresh-interval="50"></span>
-										<span class="colorlib-counter-label">Countries</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<div class="colorlib-classes colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Our Classes</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 animate-box">
-						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-								<span class="price text-center"><small>$450</small></span>
-							</div>
-							<div class="desc">
-								<h3><a href="#">Developing Mobile Apps</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-								<span class="price text-center"><small>$450</small></span>
-							</div>
-							<div class="desc">
-								<h3><a href="#">Convert PSD to HTML</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-								<span class="price text-center"><small>$450</small></span>
-							</div>
-							<div class="desc">
-								<h3><a href="#">Convert HTML to WordPress</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-4.jpg);">
-								<span class="price text-center"><small>$450</small></span>
-							</div>
-							<div class="desc">
-								<h3><a href="#">Developing Mobile Apps</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-5.jpg);">
-								<span class="price text-center"><small>$450</small></span>
-							</div>
-							<div class="desc">
-								<h3><a href="#">Learned Smoke Effects</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/classes-6.jpg);">
-								<span class="price text-center"><small>$450</small></span>
-							</div>
-							<div class="desc">
-								<h3><a href="#">Convert HTML to WordPress</a></h3>
-								<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
-								<p><a href="#" class="btn-learn">Learn More <i class="icon-arrow-right3"></i></a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
+            <div class="block-15">
+              <div class="heading">
+                <h2>Welcome to EventsCalendar</h2>
+              </div>
+              <div class="text mb-5">
+              <p>This is EventsCalendar the webiste that brings your notice to events that are happening around in the University of Nigeria Nsukka. You can view past, present or upcoming events.Through our website you can also view your class timetable</p>
+              </div>
+              <p><a href="{{ route('frontend.about')}}" class="btn btn-primary reverse py-2 px-4">Read More</a></p>
+              
+            </div>
 
+          </div>
+          
+        </div>
 
-		<div class="colorlib-event">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Upcoming Events</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="event-flex row-pb-sm">
-					<div class="half event-img animate-box" style="background-image: url(images/event.jpg);">
-					</div>
-					<div class="half">
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<div class="event-entry">
-									<div class="desc">
-										<p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-										<p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-										<h2><a href="event.html">We Held Free Training for Basic Programming</a></h2>
-									</div>
-									<div class="location">
-										<span class="icon"><i class="icon-map"></i></span>
-										<p>291 South 21th Street, Suite 721 New York NY 10016</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12 animate-box">
-								<div class="event-entry">
-									<div class="desc">
-										<p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-										<p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-										<h2><a href="event.html">You're Invited 1st Anniversary of Upskill</a></h2>
-									</div>
-									<div class="location">
-										<span class="icon"><i class="icon-map"></i></span>
-										<p>291 South 21th Street, Suite 721 New York NY 10016</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12 animate-box">
-								<div class="event-entry">
-									<div class="desc">
-										<p class="meta"><span class="day">19</span><span class="month">Apr</span></p>
-										<p class="organizer"><span>Organized by:</span> <span>Noah Henderson</span></p>
-										<h2><a href="event.html">Practice Workshop 2018</a></h2>
-									</div>
-									<div class="location">
-										<span class="icon"><i class="icon-map"></i></span>
-										<p>291 South 21th Street, Suite 721 New York NY 10016</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      </div>
+    </section>
+    <!-- END section -->
 
+    <section class="site-section bg-light element-animate" id="section-counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <figure><img src="images/img_2_b.jpg" alt="Image placeholder" class="img-fluid"></figure>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <div class="block-15">
+              <div class="heading">
+                <h2>Education is life when you know what is happening around you</h2>
+              </div>
+              <div class="text mb-5">
+                <p>This is an avenue for everyone: just log on to our website register with us and begin to find out events that are taking place or the ones that will take place in the future</p>
+              </div>
+            </div>
 
-		<div class="colorlib-blog colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Recent News</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 animate-box">
-						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-								<p class="meta"><span class="day">18</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>Posted by:</span> <span>James Smith</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-6">
-						<div class="f-blog animate-box">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">How to Create Website in Scratch</a></h2>
-								<p class="admin"><span>04 March 2018</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</div>
-						<div class="f-blog animate-box">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">How to Convert PSD File to HTML File?</a></h2>
-								<p class="admin"><span>04 March 2018</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</div>
-						<div class="f-blog animate-box">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">How to Build Games App in Mobile</a></h2>
-								<p class="admin"><span>04 March 2018</span></p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="block-18 d-flex align-items-center">
+                  <div class="icon mr-4">
+                    <span class="flaticon-student"></span>
+                  </div>
+                  <div class="text">
+                    <strong class="number" data-number="2921">0</strong>
+                    <span>Students joined with us</span>
+                  </div>
+                </div>
 
+                <div class="block-18 d-flex align-items-center">
+                  <div class="icon mr-4">
+                    <span class="flaticon-university"></span>
+                  </div>
+                  <div class="text">
+                    <strong class="number" data-number="51">0</strong>
+                    <span>Events</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="block-18 d-flex align-items-center">
+                  <div class="icon mr-4">
+                    <span class="flaticon-books"></span>
+                  </div>
+                  <div class="text">
+                    <strong class="number" data-number="3902">0</strong>
+                    <span>Commendations</span>
+                  </div>
+                </div>
+
+                <div class="block-18 d-flex align-items-center">
+                  <div class="icon mr-4">
+                    <span class="flaticon-mortarboard"></span>
+                  </div>
+                  <div class="text">
+                    <strong class="number" data-number="1921">0</strong>
+                    <span>Likes</span>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-7 text-center section-heading">
+            <h2 class="text-primary heading">Popular Events that we viewed</h2>
+            <p>These are past events that EventsCalendar viewed on the webiste.</p>
+            <p><a href="{{ route('register')}}" class="btn btn-primary py-2 px-4"><span class="ion-ios-book mr-2"></span>Register Now</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid block-11 element-animate">
+        <div class="nonloop-block-11 owl-carousel">
+          <div class="item">
+            <div class="block-19">
+                <figure>
+                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h2 class="heading">First year orientation</h2>
+                  <p class="mb-4">The first year orientation that are held at the Ekpo Convocational Area.</p>
+                  <div class="meta d-flex align-items-center">
+                    <div class="number">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+                <figure>
+                  <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h2 class="heading">Male and Female Hostel bonfires</h2>
+                  <p class="mb-4">Male hostels like Eni-Njoku and ALvan-Ikoku and female hostels like Nkrumah,Eyo-Ita,Bello bonfire that held at their respectives hostels </p>
+                  <div class="meta d-flex align-items-center">
+                    <div class="number">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+              <figure>
+                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="text">
+                <h2 class="heading">First year Matriculation</h2>
+                <p class="mb-4">The first year matriculation that held at the different faculties of the great Institution.</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+              <figure>
+                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="text">
+                <h2 class="heading">Catholic Student Concert</h2>
+                <p class="mb-4">The catholic students choir concert that held at the Princess Alexandra Auditorium(PAA).</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+                <figure>
+                  <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h2 class="heading">SUG first years Bonfire</h2>
+                  <p class="mb-4">The special bonfire organised by UNN SUG for first years at Freedom Square</p>
+                  <div class="meta d-flex align-items-center">
+                    <div class="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+                <figure>
+                  <img src="images/indexdd.jpg" alt="Image" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h2 class="heading">SUG first years Orientation</h2>
+                  <p class="mb-4">The first year orientation that are held at the Ekpo Convocational Area.</p>
+                  <div class="meta d-flex align-items-center">
+                    <div class="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+              <figure>
+                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="text">
+                <h2 class="heading">First year Matriculation</h2>
+                <p class="mb-4">The first year matriculation that held at the different faculties of the great Institution..</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="block-19">
+              <figure>
+                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="text">
+                <h2 class="heading">Male and Female Hostel bonfires</h2>
+                <p class="mb-4">Male hostels like Eni-Njoku and ALvan-Ikoku and female hostels like Nkrumah,Eyo-Ita,Bello bonfire that held at their respectives hostels.</p>
+                <div class="meta d-flex align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+       
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-7 text-center section-heading">
+            <h2 class="text-primary heading">Blog</h2>
+            <p>Our Blog. You can chat with other students and talk about past, present or future events.You can chat so you pair with someone to go with to an event</p>
+          </div>
+        </div>
+        <div class="row element-animate">
+          
+          <div class="col-md-12 mb-5 mb-lg-0 col-lg-6">
+
+            <div class="block-20 ">
+              <figure>
+                <a href="#"><img src="images/img_1.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
+                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-12 col-lg-6">
+            
+            <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/img_1.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
+                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
+                </div>
+              </div>
+            </div>  
+
+            <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/img_2.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
+                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
+                </div>
+              </div>
+            </div>  
+
+            <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/img_3.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
+                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
+                </div>
+              </div>
+            </div>  
+
+            <div class="block-21 d-flex mb-4">
+              <figure class="mr-3">
+                <a href="#"><img src="images/img_3.jpg" alt="" class="img-fluid"></a>
+              </figure>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
+                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
+                </div>
+              </div>
+            </div>  
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
 @stop

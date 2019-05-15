@@ -3,11 +3,17 @@
 
 Auth::routes();
 
-Route::get('/', 'UpskillController@index')->name('frontend.home');
-Route::get('about', 'UpskillController@about')->name('frontend.about');
-Route::get('course', 'UpskillController@course')->name('frontend.course');
-Route::get('news', 'UpskillController@news')->name('frontend.news');
-Route::get('contact', 'UpskillController@contact')->name('frontend.contact');
-Route::get('register', 'UpskillController@register')->name('user.register');
-Route::get('single-course', 'UpskillController@singlecourse')->name('frontend.single-course');
-Route::get('login', 'UpskillController@login')->name('user.login');
+Route::get('/', 'EventsController@index')->name('frontend.home');
+Route::get('about', 'EventsController@about')->name('frontend.about');
+Route::get('course', 'EventsController@course')->name('frontend.course');
+Route::get('course-single', 'EventsController@course-single')->name('frontend.course-single');
+Route::get('contact', 'ContactController@show');
+Route::post('contact', 'ContactController@mail');
+Route::get('blog-single', 'EventsController@blog-single')->name('frontend.blog-single');
+Route::get('blog', 'EventsController@blog')->name('frontend.blog');
+Route::get('events', 'EventsController@events')->name('frontend.events');
+
+
+Route::get('verifyEmailFirst', 'Auth\RegisterController@verifyEmailFirst')->name('verifyEmailFirst');
+
+Route::get('verify/{email}/{verifyToken}','Auth\RegisterController@sendEmailDone')->name('sendEmailDone');

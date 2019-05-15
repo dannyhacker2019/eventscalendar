@@ -1,57 +1,21 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Welcome to Upskill</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>EventsCalendar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="{{ asset('css/animate.css')}}">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="{{ asset('css/icomoon.css')}}">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{{ asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/animate.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css')}}">
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="{{ asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ asset('fonts/ionicons/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('fonts/fontawesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css')}}">
 
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="{{ asset('css/flexslider.css')}}">
-
-	
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css')}}">
-	<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css')}}">
-	
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css')}}">
-
-	<!-- Theme style  -->
+    <!-- Theme Style -->
 	<link rel="stylesheet" href="{{ asset('css/style.css')}}">
-
-	<!-- Modernizr JS -->
-	<script src="{{ asset('js/modernizr-2.6.2.min.js')}}"></script>
-
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	
+</head>

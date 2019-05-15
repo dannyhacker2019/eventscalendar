@@ -1,11 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.default')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+             
+              <h1 class="mb-2">Register</h1>
+              <p class="bcrumb"><a href="{{ route('frontend.home')}}">Home</a> <span class="sep ion-android-arrow-dropright px-2"></span>  <span class="current">Register</span></p>
+            
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
