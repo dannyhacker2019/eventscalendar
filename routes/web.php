@@ -5,6 +5,7 @@ Auth::routes();
 
 Route::get('/', 'EventsController@index')->name('frontend.home');
 Route::get('about/me', 'EventsController@aboutme')->name('frontend.about.me');
+Route::get('about/lol', 'EventsController@lol')->name('frontend.lol');
 Route::get('about', 'EventsController@about')->name('frontend.about');
 Route::get('course', 'EventsController@course')->name('frontend.course');
 Route::get('course-single', 'EventsController@course-single')->name('frontend.course-single');
